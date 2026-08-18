@@ -29,12 +29,21 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     let cancelled = false;
+    const token = localStorage.getItem("medirator_token");
+    // Avoid noisy 401 /auth/me when the user is logged out
+    if (!token) {
+      setLoading(false);
+      return;
+    }
     fetchMe()
       .then((me) => {
         if (!cancelled) setUser(me);
       })
       .catch(() => {
-        if (!cancelled) setUser(null);
+        if (!cancelled) {
+          localStorage.removeItem("medirator_token");
+          setUser(null);
+        }
       })
       .finally(() => {
         if (!cancelled) setLoading(false);
