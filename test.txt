@@ -1,0 +1,20 @@
+# Demo queries (Medibot)
+
+Copy-paste these after signing in. Pick the matching category tile when possible.
+
+## Patients
+- SOAP for Alex Rivera chest pain
+- Tell me about patient P-1000
+- Cardiology dyspnea patient
+
+## Medicines
+- Metformin dosage and contraindications
+- Lisinopril dose
+
+## Inventory
+- N95 mask stock status
+- Where is IV normal saline?
+
+## Instruments
+- Portable ultrasound maintenance status
+- ECG machine calibration
