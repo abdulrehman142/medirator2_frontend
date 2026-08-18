@@ -7,7 +7,7 @@ React + Vite + Tailwind UI for the Medirator hospital knowledge assistant.
 ```bash
 npm install
 cp .env.example .env
-# VITE_API_URL=https://your-backend-url
+# VITE_API_URL=https://medirator2-backend.onrender.com
 # VITE_GOOGLE_CLIENT_ID=<same as backend GOOGLE_CLIENT_ID>
 npm run dev
 ```
@@ -16,7 +16,7 @@ npm run dev
 
 | Variable | Purpose |
 |----------|---------|
-| `VITE_API_URL` | Backend base URL |
+| `VITE_API_URL` | Backend base URL (`https://medirator2-backend.onrender.com`) |
 | `VITE_GOOGLE_CLIENT_ID` | Google OAuth web client ID |
 
 Backend companion: https://github.com/abdulrehman142/medirator2_backend

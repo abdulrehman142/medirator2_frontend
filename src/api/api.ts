@@ -6,7 +6,8 @@ import type {
   QueryResponse,
 } from "../types/types";
 
-const BASE_URL = import.meta.env.VITE_API_URL ?? "http://127.0.0.1:8000";
+const BASE_URL =
+  import.meta.env.VITE_API_URL ?? "https://medirator2-backend.onrender.com";
 
 async function parseError(res: Response): Promise<string> {
   try {
